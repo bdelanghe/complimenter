@@ -8,13 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/deoxxa/complimenter.git"
+    "url": "git://github.com/bdelanghe/complimenter.git"
   },
   "keywords": [
     "compliments",
     "niceties",
     "words"
   ],
-  "author": "Conrad Pankoff <deoxxa@fknsrs.biz> (http://www.fknsrs.biz/)",
-  "license": "BSD"
+  "author": "Robert DeLanghe <studio@robertdelanghe.com> (http://robertdelanghe.com)",
+  "license": "BSD",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

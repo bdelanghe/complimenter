@@ -3,7 +3,7 @@ Complimenter
 
 9 out of 10 doctors say you have practically radiant knees.
 
-This is a fork of [deoxxa/complimenter](http://github.com/deoxxa/complimenter) with a whole load of new words added. It can be used as a node module or use the rest api on [https://complimentr.com](https://complimentr.com)
+This is a fork of [deoxxa/complimenter](https://github.com/grantcodes/complimenter) fork of [deoxxa/complimenter](http://github.com/deoxxa/complimenter) with a whole load of new words added. It can be used as a node module or use the rest api on [https://complimentr.com](https://complimentr.com)
 
 Overview
 --------
@@ -25,11 +25,11 @@ Installation
 
 Available via [npm](http://npmjs.org/):
 
-> $ npm install grantcodes/complimenter
+> $ npm install bdelanghe/complimenter
 
 Or via git:
 
-> $ git clone git://github.com/grantcodes/complimenter.git node_modules/complimenter
+> $ git clone git://github.com/bdelanghe/complimenter.git node_modules/complimenter
 
 License
 -------
@@ -38,6 +38,9 @@ License
 
 Contact
 -------
+### me
+
+[http://robertdelanghe.com](http://robertdelanghe.com)
 
 ### grantcodes
 

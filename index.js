@@ -1,10 +1,12 @@
+const express = require("express");
+
 var finalTemplates = [
   function() { return "you are " + getDescriptor(); },
   function() { return "you have " + getAbstractProperty(); },
 ];
 
 var templates = [
-  function() { return "9 out of 10 doctors say " + getFinalTemplate(); },
+  function() { return "9 out of 10 programers say " + getFinalTemplate(); },
   function() { return "i can tell " + getFinalTemplate(); },
   function() { return "i can't believe " + getFinalTemplate(); },
   function() { return "i must say: " + getFinalTemplate(); },
@@ -23,13 +25,9 @@ var abstractProperties = [
 ];
 
 var tangibleSingularProperties = [
-  "ass",
   "belly button",
-  "booty",
   "bottom lip",
   "brain",
-  "bum",
-  "butt",
   "chin",
   "demeanour",
   "face",
@@ -37,7 +35,6 @@ var tangibleSingularProperties = [
   "forehead",
   "heart",
   "index finger",
-  "keister",
   "laugh",
   "left foot",
   "left hand",
@@ -54,8 +51,6 @@ var tangibleSingularProperties = [
   "soul",
   "thumb",
   "tongue",
-  "tush",
-  "tushie",
   "vibe",
   "voice",
   "way of thinking",
@@ -80,7 +75,6 @@ var tangibleMultipleProperties = [
   "forearms",
   "hair",
   "hands",
-  "hips",
   "ideas",
   "knees",
   "legs",
@@ -271,3 +265,11 @@ var getAdverb = module.exports.getAdverb = function getAdverb() {
 var getDescriptor = module.exports.getDescriptor = function getDescriptor() {
   return [getAdverb(), getAdjective()].join(" ");
 }
+
+const app = new express();
+
+app.get("/", (req, res) => {
+  res.json(makeCompliment());
+});
+
+app.listen(3000, () => console.log('Running'));
