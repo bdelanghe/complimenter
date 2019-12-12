@@ -272,4 +272,4 @@ app.get("/", (req, res) => {
   res.json(makeCompliment());
 });
 
-app.listen(3000, () => console.log('Running'));
+app.listen(process.env.PORT || 5000, () => console.log('Running'));
